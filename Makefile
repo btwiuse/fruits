@@ -4,6 +4,9 @@ images:
 links:
 	@ ./scripts/links
 
+pngs:
+	@ ./scripts/pngs
+
 gif:
 	@ convert -dispose previous -delay 10 -loop 0 ./assets/png/*.png animation.gif
 
