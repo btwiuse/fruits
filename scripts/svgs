@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+mkdir -p assets/{svg,png,'png#'}
+
+get_svg(){
+  echo "curl -sL ${2} > ./assets/svg2/${1}.svg"
+}
+
+get_svg  grapes       https://openmoji.org/data/color/svg/1F347.svg
+get_svg  melon        https://openmoji.org/data/color/svg/1F348.svg
+get_svg  watermelon   https://openmoji.org/data/color/svg/1F349.svg
+get_svg  tangerine    https://openmoji.org/data/color/svg/1F34A.svg
+get_svg  lemon        https://openmoji.org/data/color/svg/1F34B.svg
+get_svg  banana       https://openmoji.org/data/color/svg/1F34C.svg
+get_svg  pineapple    https://openmoji.org/data/color/svg/1F34D.svg
+get_svg  mango        https://openmoji.org/data/color/svg/1F96D.svg
+get_svg  red_apple    https://openmoji.org/data/color/svg/1F34E.svg
+get_svg  green_apple  https://openmoji.org/data/color/svg/1F34F.svg
+get_svg  pear         https://openmoji.org/data/color/svg/1F350.svg
+get_svg  peach        https://openmoji.org/data/color/svg/1F351.svg
+get_svg  cherries     https://openmoji.org/data/color/svg/1F352.svg
+get_svg  strawberry   https://openmoji.org/data/color/svg/1F353.svg
+get_svg  blueberries  https://openmoji.org/data/color/svg/1FAD0.svg
+get_svg  kiwi_fruit   https://openmoji.org/data/color/svg/1F95D.svg
+get_svg  tomato       https://openmoji.org/data/color/svg/1F345.svg
+# get_svg  olive        https://openmoji.org/data/color/svg/1FAD2.svg
+get_svg  coconut      https://openmoji.org/data/color/svg/1F965.svg
+get_svg  avocado      https://openmoji.org/data/color/svg/1F951.svg
+get_svg  cucumber     https://openmoji.org/data/color/svg/1F952.svg
+# get_svg  eggplant     https://openmoji.org/data/color/svg/1F346.svg
+# get_svg  hot_peper    https://openmoji.org/data/color/svg/1F336.svg
+# get_svg  bell_peper   https://openmoji.org/data/color/svg/1FAD1.svg
+# get_svg  corn         https://openmoji.org/data/color/svg/1F33D.svg
+# get_svg  beans        https://openmoji.org/data/color/svg/1FAD8.svg

@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
 
-mkdir -p assets/{svg,png,'png#'}
+mkdir -p assets/{svg2,svg,png,'png#','png2#'}
 
-for i in {0..9}; do
-  convert \
-    -background none \
-    -density 1200 \
-    -resize 512x512 \
-    "assets/svg/$i.svg" "assets/png#/$i#10.png"
+ls -1 assets/svg2/*.svg | while read f; do
+  i=$(basename $f | sed -e s,.svg,,g )
+  echo convert -background none -density 1200 -resize 512x512 "assets/svg2/$i.svg" "assets/png2#/$i#5.png"
 done

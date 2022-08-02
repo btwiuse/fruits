@@ -7,6 +7,9 @@ links:
 pngs:
 	@ ./scripts/pngs
 
+svgs:
+	@ ./scripts/svgs
+
 gif:
 	@ convert -dispose previous -delay 10 -loop 0 ./assets/png/*.png animation.gif
 
