@@ -7,6 +7,5 @@ for i in {0..9}; do
     -background none \
     -density 1200 \
     -resize 512x512 \
-    assets/svg/$i.svg assets/png/$i.png
-  cp -v "assets/png/$i.png" "assets/png#/$i#10.png"
+    "assets/svg/$i.svg" "assets/png#/$i#10.png"
 done
