@@ -1,3 +1,3 @@
-# Frutta
+# Phruit
 
 ![animation](./animation.gif)
